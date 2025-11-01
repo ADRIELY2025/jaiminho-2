@@ -9,7 +9,7 @@ class Home extends Base
         $dadosTemplate = [
             'titulo' => 'Página Inicial'
         ];
-        return $this->gteTwig()
+        return $this->getTwig()
             ->render($response, 'home.html', $dadosTemplate)
             ->withHeader('Content-Type', 'text/html')
             ->withStatus(200);

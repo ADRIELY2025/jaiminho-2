@@ -7,7 +7,7 @@ use Slim\Views\Twig;
 trait Template
 {
 
-    public function gteTwig()
+    public function getTwig()
     {
         try {
             $twig = Twig::create(DIR_VIEW);

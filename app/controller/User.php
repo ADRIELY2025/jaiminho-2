@@ -9,7 +9,7 @@ class User extends Base
         $dadosTemplate = [
             'titulo' => 'Lista de Usuário'
         ];
-        return $this->gteTwig()
+        return $this->getTwig()
             ->render($response, $this->setView('listuser'), $dadosTemplate)
             ->withHeader('Content-Type', 'text/html')
             ->withStatus(200);
@@ -19,7 +19,7 @@ class User extends Base
         $dadosTemplate = [
             'titulo' => 'Cadastro de Usuário'
         ];
-        return $this->gteTwig()
+        return $this->getTwig()
             ->render($response, $this->setView('caduser'), $dadosTemplate)
             ->withHeader('Content-Type', 'text/html')
             ->withStatus(200);
