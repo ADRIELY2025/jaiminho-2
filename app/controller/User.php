@@ -24,4 +24,14 @@ class User extends Base
             ->withHeader('Content-Type', 'text/html')
             ->withStatus(200);
     }
+    public function cliente($request, $response)
+    {
+        $dadosTemplate = [
+            'titulo' => 'Cadastro de Cliente'
+        ];
+        return $this->getTwig()
+            ->render($response, $this->setView('caduser'), $dadosTemplate)
+            ->withHeader('Content-Type', 'text/html')
+            ->withStatus(200);
+    }
 }
